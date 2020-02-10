@@ -1,6 +1,5 @@
 package dev.appy.ar.android.arbook.fragment;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +12,6 @@ import androidx.fragment.app.Fragment;
 
 import dev.appy.ar.android.arbook.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class PageFragment extends Fragment {
 
     private TextView tvContent;
@@ -24,7 +20,7 @@ public class PageFragment extends Fragment {
     public PageFragment() {
     }
 
-    public  PageFragment newInstance(String content) {
+    public PageFragment newInstance(String content) {
         PageFragment fragment = new PageFragment();
         Bundle bundle = new Bundle();
         bundle.putString("TEXT", content);
