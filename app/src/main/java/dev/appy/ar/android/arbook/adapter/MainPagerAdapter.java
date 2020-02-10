@@ -23,8 +23,6 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         switch (position) {
-            case 0:
-                return new PageFragment().newInstance(content.get(0));
             case 1:
                 return new PageFragment().newInstance(content.get(1));
             case 2:
@@ -65,6 +63,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
                 return new PageFragment().newInstance(content.get(19));
             case 20:
                 return new PageFragment().newInstance(content.get(20));
+            case 0:
             default:
                 return new PageFragment().newInstance(content.get(0));
         }
